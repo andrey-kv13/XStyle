@@ -1,0 +1,17 @@
+node_modules/
+dist/
+
+*.tsbuildinfo
+
+desktop*.png
+mobile*.png
+luxury*.png
+collections*.png
+philosophy.png
+palette-*.png
+spa-*.png
+contact_sheet.jpg
+
+frames/
+
+VID_*.mp4
