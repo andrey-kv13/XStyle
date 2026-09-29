@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { motion, useReducedMotion } from 'framer-motion';
+import { assetPath } from '../lib/assetPath';
 
 type PreloaderProps = {
   onComplete: () => void;
@@ -18,7 +19,7 @@ export function Preloader({ onComplete }: PreloaderProps) {
 
     image.onload = finish;
     image.onerror = finish;
-    image.src = '/media/showroom-hero.jpg';
+    image.src = assetPath('media/showroom-hero.jpg');
 
     const timeout = window.setTimeout(finish, 5000);
 

@@ -1,4 +1,5 @@
 import type { CollectionItem, HeroSlide, NavItem, ViewId } from '../types';
+import { assetPath } from '../lib/assetPath';
 
 export const brand = {
   name: 'X-style',
@@ -22,24 +23,24 @@ export const viewTitles: Record<ViewId, string> = {
 export const heroSlides: HeroSlide[] = [
   {
     id: 'showroom-hero',
-    image: '/media/showroom-hero.jpg',
+    image: assetPath('media/showroom-hero.jpg'),
     alt: 'Мебель и интерьер шоурума X-style',
   },
   {
     id: 'dining-room',
-    image: '/media/dining-room.jpg',
+    image: assetPath('media/dining-room.jpg'),
     alt: 'Обеденная зона шоурума X-style',
   },
   {
     id: 'bedroom',
-    image: '/media/bedroom.jpg',
+    image: assetPath('media/bedroom.jpg'),
     alt: 'Спальная зона шоурума X-style',
   },
 ];
 
 export const collections: CollectionItem[] = [
-  { title: 'Столы', image: '/media/dining-room.jpg', description: 'Место для встреч' },
-  { title: 'Стулья', image: '/media/chairs.jpg', description: 'Искусство быть удобным' },
-  { title: 'Кровати', image: '/media/bedroom.jpg', description: 'Личное пространство' },
-  { title: 'Декор', image: '/media/decor.jpg', description: 'Характер в деталях' },
+  { title: 'Столы', image: assetPath('media/dining-room.jpg'), description: 'Место для встреч' },
+  { title: 'Стулья', image: assetPath('media/chairs.jpg'), description: 'Искусство быть удобным' },
+  { title: 'Кровати', image: assetPath('media/bedroom.jpg'), description: 'Личное пространство' },
+  { title: 'Декор', image: assetPath('media/decor.jpg'), description: 'Характер в деталях' },
 ];

@@ -1,9 +1,11 @@
+import { assetPath } from '../../shared/lib/assetPath';
+
 export function PhilosophyView() {
   return (
     <section className="editorial view-padding grid h-full min-h-0 gap-8 md:grid-cols-[0.9fr_1.1fr] md:gap-16">
       <img
         className="h-full min-h-0 w-full rounded-sm object-cover"
-        src="/media/table-detail.jpg"
+        src={assetPath('media/table-detail.jpg')}
         alt="Фактура и детали обеденного стола"
       />
       <div className="flex max-w-xl flex-col justify-center">

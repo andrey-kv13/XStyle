@@ -1,3 +1,5 @@
+import { assetPath } from '../../shared/lib/assetPath';
+
 export function ContactsView() {
   return (
     <section className="editorial view-padding grid h-full gap-8 md:grid-cols-[1.1fr_0.9fr] md:gap-16">
@@ -13,7 +15,11 @@ export function ContactsView() {
         </p>
         <p className="mt-6 border-t border-ink/15 pt-6 text-sm text-muted">Контакты шоурума скоро появятся здесь.</p>
       </div>
-      <img src="/media/decor.jpg" alt="Детали интерьера шоурума" className="h-full min-h-0 w-full rounded-sm object-cover" />
+      <img
+        src={assetPath('media/decor.jpg')}
+        alt="Детали интерьера шоурума"
+        className="h-full min-h-0 w-full rounded-sm object-cover"
+      />
     </section>
   );
 }
